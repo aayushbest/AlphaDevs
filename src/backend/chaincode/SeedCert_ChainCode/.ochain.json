@@ -1,0 +1,7 @@
+{
+  "name": "SeedCert_ChainCode",
+  "description": "Chaincode package for SeedCert_ChainCode",
+  "chaincodeName": "SeedCert_ChainCode",
+  "chaincodeType":"node",
+  "configFileLocation": ""
+}

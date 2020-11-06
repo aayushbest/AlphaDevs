@@ -1,0 +1,26 @@
+-Installation and Testing Locally
+* Open VSCode
+* In the right pane click on the Oracle App Builder with O icon just below extensions
+* In the opened panel there will be there three left panels stacked.
+*In the first panel named chain code click on the navigation menu and choose import chain code
+* In the File chooser dialog go to src/backend/chaincode and choose SeedCert_ChainCode.
+  In this way you will have the chaincode 
+* In order to import Input Specification File Go to Specification and import specification .
+* In the file chooser dialog go to src/backend/specs/
+and choose either yml or json file as both have same content to import.
+* Now your whole backend is imported you can run and test it by creating your own local environment which is below the specification area.
+* To deploy the chaincode, right click on the chaincode project root folder and click package.
+* Choose the location to write the zip file of your project and click OK.
+* Your deployable chaincode file is ready.
+* You can check the frontend of the application in src/frontend directory. It can be executed using any mordern web browser.
+-Installation and Testing on the Cloud Blockchain 
+* Follow the instruction written in "credential.txt" , in order to get the access of cloud platform.
+* Once you reach there click on the hamburger button on the top left corner.
+* From there choose Blockchain platform.
+* On the left choose comparment in drop down list as SeedCertification2
+* Once you will be there, In the list of Blockchain instances choose BlockOne
+* Once BlockOne instance dashboard is shown choose Start Console.
+* Note: Current Version of Chain code is already deployed.
+For further deployment of the chaincode
+Please visit:
+https://docs.oracle.com/en/cloud/paas/blockchain-cloud/usingoci/deploy-your-chaincode-using-visual-studio-code.html#GUID-08BAEA21-9124-46CB-A545-0EEABFAD193E 

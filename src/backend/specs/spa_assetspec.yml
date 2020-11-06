@@ -1,0 +1,193 @@
+assets:
+    - name: SeedCertificateDoc # Only Single assest
+      properties:
+          - name: LotNumber
+            type: string 
+            id: true
+            mandatory: true
+            default: "XXX12-34-567-890(1)"
+            validate: "/^[a-A0-9]{5}[-]{1}[0-9]{2}[-]{1}[0-9]{3}[-]{1}[0-9]{3}([(][0-9]+[)])$/"
+          - name: Owner
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(100)
+          - name: CropName
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(100)
+          - name: Variety # crop Variety
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(100)
+          - name: SourceTagNumber
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: /^F[0-9]{10}/
+          - name: SourceClass
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: "/^(Breeder|Foundation-1|Foundation-2)$/"
+          - name: DestinationClass
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: "/^(Certified-1|Certified-2)$/"
+          - name: SourceQuantity
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: "/^[0-9]+KG$/"
+          - name: SourceDateOfIssue
+            type: date
+            mandatory: true
+            default: "N/A"
+          - name: SourceQuantity
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: "/^[0-9]+KG$/"
+          - name: SourceDateOfIssue
+            type: date
+            mandatory: true
+            default: null
+          - name: GrowerName
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(100)
+          - name: SPA_Name
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(100)
+          - name: SourceStoreHouse
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(500)
+          - name: DestinationStoreHouse
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(500)
+          - name: SG_Name
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(100)
+          - name: SG_ID
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: "/^[A-Z]{2}[-][0-9]{4}$/"
+          - name: FinYear
+            type: date
+            mandatory: true
+            default: null
+          - name: Season
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(50)
+          - name: LandRecordKhata
+            type: number
+            mandatory: true
+            default: -1
+            validate: positive()
+          - name: LandRecordPlot
+            type: number
+            mandatory: true
+            default: -1
+            validate: positive()
+          - name: LandRecordArea
+            type: number
+            mandatory: true
+            default: -1
+            validate: positive()
+          - name: CropRegCode
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: "/^[A-Z]{1}[0-9]+[-][0-9]+[-][0-9]+$/"
+          - name: SPP_NAME
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(100)
+          - name: SPP_ID
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: /^[0-9]+[-][0-9]+/
+          - name: TotalQuantityProcessed
+            type: number
+            mandatory: true
+            default: -1
+            validate: positive
+          - name: ProcessingDate
+            type: date
+            mandatory: true
+            default: null
+          - name: ProcessingDate
+            type: date
+            mandatory: true
+            default: null
+          - name: VerificationDate
+            type: date
+            mandatory: true
+            default: null
+          - name: SampleSecreteCode
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(11)
+          - name: SamplePassed
+            type: boolean
+            mandatory: true
+            default: false
+          - name: SampleTestDate
+            type: date
+            mandatory: true
+            default: null
+          - name: CertificateNumber
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: max(9)
+          - name: CertificateDate
+            type: date
+            mandatory: true
+            default: null
+          - name: TagSeries
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: "/^[A-Z]{1}[0-9][4]$/"
+          - name: TagIssueRangeFrom
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: "/^[A-Z]{1}[0-9]{4}[-][0-9]{7}$/"
+          - name: TagIssueRangeTo
+            type: string
+            mandatory: true
+            default: "N/A"
+            validate: "/^[A-Z]{1}[0-9]{4}[-][0-9]{7}$/"
+          - name: NumberOfTagIssued
+            type: number
+            mandatory: true
+            default: -1
+            validate: positive()
+          - name: CertificateValidityInMonth
+            type: number
+            mandatory: true
+            default: -1
+            validate: min(1),positive(),max(12)
+      methods:
+          crud: []
+          others : [] 

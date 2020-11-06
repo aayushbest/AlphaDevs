@@ -1,0 +1,12 @@
+List of dependency to work on this project:
+*Installation of Node Package Manager(https://www.npmjs.org/)
+*Installation of Typescript Languge using Node Package Manager using the following command:
+	npm install -g typescript@latest
+*Installation of Visual Studio Code IDE
+*Installation of Oracle Blockchain App Builder Extension for the Visual Studio Code 
+   Following are the steps to install the extension:
+   a.Open VS Code 
+   b. Go to Extensions Tab
+   c. In the menu search for oracle blockchain app builder
+   d. open it and click install
+ 
